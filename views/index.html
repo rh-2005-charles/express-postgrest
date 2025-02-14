@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lista de Tareas</h1>
+
+     <!-- Campo de búsqueda -->
+  <div class="search-container">
+    <label for="search">Buscar por título: </label>
+    <input type="text" id="search" placeholder="Buscar tareas..." oninput="buscarTareas()">
+  </div>
+
+  <button onclick="crearTarea()">Crear</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-tareas">
+      <!-- Aquí se mostrarán las filas de las tareas -->
+    </tbody>
+  </table>
+  
+    <script src="script.js"></script>
+
+</body>
+</html>

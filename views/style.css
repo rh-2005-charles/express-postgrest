@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* Estilos para el contenedor de búsqueda */
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-container label {
+    font-size: 16px;
+    margin-right: 10px;
+    align-self: center;
+    color: #34495e;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #3498db;
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+/* Encabezados */
+table th {
+    background-color: #3498db;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+/* Filas alternadas */
+table tbody tr:nth-child(even) {
+    background-color: #ecf0f1;
+}
+
+table tbody tr:hover {
+    background-color: #dcdde1;
+    cursor: pointer;
+}
+
+/* Resaltado de filas cuando se pasa el ratón por encima */
+table td {
+    background-color: white;
+}
+
+/* Efecto al pasar el ratón por las filas */
+table tr:hover td {
+    background-color: #f4f6f7;
+}
+
+/* Estilo para la columna de acciones */
+table .acciones button {
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+table .acciones button:hover {
+    background-color: #2980b9;
+}
+
+table .acciones button.delete {
+    background-color: #e74c3c;
+}
+
+table .acciones button.delete:hover {
+    background-color: #c0392b;
+}
+
+/* Para cuando la tabla no tiene datos */
+#tabla-tareas:empty::before {
+    content: "No hay tareas disponibles";
+    color: #7f8c8d;
+    font-style: italic;
+    text-align: center;
+    width: 100%;
+    display: block;
+    padding: 20px;
+}
+
+
+/* Estilo para el botón "Crear" */
+button {
+    background-color: #4CAF50;  
+    color: white;              
+    padding: 10px 20px;        
+    font-size: 16px;            
+    border: none;              
+    border-radius: 5px;         
+    cursor: pointer;          
+    transition: background-color 0.3s, transform 0.2s; 
+  }
+  
+  /* Efecto cuando se pasa el ratón por encima del botón */
+  button:hover {
+    background-color: #45a049;  
+    transform: scale(1.05);      
+  }
+  
+  /* Efecto al hacer clic en el botón */
+  button:active {
+    background-color: #388e3c; 
+    transform: scale(0.98);      
+  }
+  
