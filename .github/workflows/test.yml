@@ -1,15 +1,14 @@
 name: Prueba num 1
 
 on:
-    push:
-        branches:
-          - main
+  push:
+    branches:
+      - main
 
-    
-    jobs:
-        decir-hola:
-            runs-on: ubuntu:lastest
+jobs:
+  decir-hola:
+    runs-on: ubuntu-latest
 
-            steps:
-                - name: Mostrar mensaje
-                run: echo "Hola Mundo"
+    steps:
+      - name: Mostrar mensaje
+        run: echo "Hola Mundo"
