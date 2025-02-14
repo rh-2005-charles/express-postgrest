@@ -9,8 +9,6 @@ en el terminal colocar:
 
     npm install
 
-    npm install express
-
     node app.js
 
     
