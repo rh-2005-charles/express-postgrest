@@ -8,7 +8,7 @@ on:
 jobs:
   decir-hola:
     runs-on: ubuntu-latest
-    permission: 
+    permissions: 
       contents: read
       packages: write
     environment: produccion
