@@ -104,7 +104,8 @@ app.delete('/tbl_tareas/:id', async (req, res) => {
 });
 
 // Configurar el puerto en el que escuchará el servidor
-const port = 3000;
+//const port = 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
   console.log(`Servidor corriendo en http://localhost:${port}`);
 });
